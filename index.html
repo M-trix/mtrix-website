@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="M'trix Official Programming Club of SGGSIE&T, Nanded">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/mtrix.png">
+    <title>M'TRIX</title>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+<style>
+    #video {
+        background:linear-gradient(to bottom,rgba(0,0,0,0.35),rgba(0,0,0,1)),
+                    url("images/hacking3.jpg") no-repeat center center/cover ;
+        background-attachment: fixed;
+        height:100vh;
+        width:100%;
+    }
+    .left-align{
+        text-align:left;
+
+    }
+    .italic{
+        font-style:italic;
+    }
+</style>
+
+    </head>
+    
+    <body>
+    
+    <div id="video">
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a href="#" id="logo">
+                <img src="./images/mtrix.png" alt="M'trix" border="0" width="100em !important">
+                 <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse" style="color:white !important;">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">HOME</a></li>
+                                    <li data-menuanchor="slide02"><a href="#slide02">ABOUT US</a></li>
+                                    <li data-menuanchor="slide03"><a href="#slide03">SECTIONS</a></li>
+                                    <li data-menuanchor=""><a href="html/under_construction.html">OUR PROJECTS</a></li>
+                                    
+                                    <li data-menuanchor="slide04"><a href="#slide04">OUR TEAM</a></li>
+
+                                    
+                                    <li data-menuanchor="slide05"><a href="#slide05">JOIN M'TRIX</a></li>
+                                   
+                                    <li data-menuanchor="slide06"><a href="#slide06">FAQ`s</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!--
+        <video autoplay muted loop id="myVideo">
+          <source src="images/video-bg.mp4" type="video/mp4">
+        </video>-->
+
+        <div id="fullpage" class="fullpage-default">
+            <div class="section animated-row" data-section="slide01">
+                <div class="section-inner">
+                    <div class="welcome-box">
+                        <span class="welcome-first animate" data-animate="fadeInUp"></span>
+                        <h1 class="welcome-title animate" data-animate="fadeInUp"><a href=""><img src="./images/mtrix.png" alt="M'trix" border="0"></a></h1>   
+                            <p class="animate" data-animate="fadeInUp">
+                                <span id="message"></span>
+                                <span class="cursor"></span>
+                            </p>
+
+<script>
+const mHTML = document.getElementById('message'),
+messages = [
+   'Official Programming Club of SGGSIE&T, Nanded',
+   'Official Programming Club of SGGSIE&T, Nanded',
+   'Official Programming Club of SGGSIE&T, Nanded'
+   ];
+let currentMessage = 0;
+function typeMessage() {
+  if (!messages[currentMessage]) {
+    currentMessage = 0;
+  }
+  const currentStr = messages[currentMessage];
+  currentStr.split();
+  let part = '';
+  let currentLetter = 0;
+  let int1 = setInterval(()=>{
+    if (!currentStr[currentLetter]) {
+      currentMessage++;
+      setTimeout(()=>{
+        deleteMessage(part);
+      }, 500);
+      clearInterval(int1);
+    } else {
+      part += currentStr[currentLetter++];
+      mHTML.innerHTML = part;
+    }
+  }, 100);
+}
+function deleteMessage(str) {
+  let int = setInterval(()=>{
+    if (str.length === 0) {
+      setTimeout(()=>{
+        typeMessage();
+      }, 500);
+      clearInterval(int);
+    } else {
+      str = str.split('');
+      str.pop();
+      str = str.join('');
+      mHTML.innerHTML = str;
+    }
+  },50);
+}
+typeMessage();
+</script>
+<br>
+
+
+
+                        <!--<p class="animate" data-animate="fadeInUp">M'TRIX IS AN OFFICIAL PROGRAMMING CLUB OF SGGSIE&T </p>
+-->
+                        <div class="scroll-down next-section" data-animate="fadeInUp"><img src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide02"> 
+                <div class="section-inner" >
+                    <div class="about-section" > 
+                        <div class="row justify-content-center" >
+                            <div class="col-lg-8 wide-col-laptop" >
+                                <div class="row">
+                                    
+                                        <div class="about-contentbox" >
+                                            <div class="animate" data-animate="fadeInUp">
+                                               
+                                                <h2>About Club</h2>
+                                                <p>M'Trix is the programming club of SGGSIE&T, where we group of people are passionate about programing, tech and this is the only place where being geeky nerd won't irritate others! <br>We, in M'trix, will gather 'passionate' programers, people who really live for geeky stuffs, and some of the most excellent programers in the institute will guide you through the world of code, realm of technology, dark universe of ethical hacking and oceans of 1's and 0's. <br><br>So if you are enthusiastic enough to go berserk on keyboards and explore these realms, this place is for you!
+
+</p>
+
+                                            </div>
+                                        </div>
+                                    
+                                    <!-- <div class="col-md-6">
+                                        <figure class="about-img animate" data-animate="fadeInUp"><img src="images/.jpeg" class="rounded" alt=""></figure>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section animated-row" data-section="slide03">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                               
+                                <h4>NOne of us is as smart as all of us</hz>
+                            </div>
+                            <div class="services-section">
+                                <div class="services-list owl-carousel">
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-desktop" aria-hidden="true"></i></span>
+                                            <h3>Web development</h3>
+                                            <p>The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fab fa-android" aria-hidden="true"></i></span>
+                                            <h3>Android Development</h3>
+                                            <p> Google states that "Android apps can be written using Kotlin, Java, and C++ languages" using the Android software development kit (SDK), while using other languages is also possible. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                            <h3>Cyber Security</h3>
+                                            <p>Cyber security refers to the body of technologies, processes, and practices designed to protect networks, devices, programs, and data from attack, damage, or unauthorized access. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-code" aria-hidden="true"></i></span>
+                                            <h3>Data structure & algo</h3>
+                                            <p>Algorithm is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output.While
+                                                data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fab fa-xbox" aria-hidden="true"></i></span>
+                                            <h3>Game Development</h3>
+                                            <p>Game Development is the art of creating games and describes the design, development and release of a game. It may involve concept generation, design, build, test and release.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                                            <h3>Animation</h3>
+                                            <p>Animation is a way of making a movie from many still images. The images are put together one after another, and then played at a fast speed to give the illusion of movement. </p>
+                                        </div>
+                                    </div>
+                                    <!--<div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                                            <h3>Instant Upgrades</h3>
+                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="service-box">
+                                            <span class="service-icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                            <h3>Always Monitoring</h3>
+                                            <p>Nullam auctor, justo vitae accumsan ultrices, arcu ex molestie massa, eu maximus enim tortor vitae quam. </p>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+
+<!--            <div class="section animated-row" data-section="slide04">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>My Skills</span>
+                                <h2>What i’m good?</h2>
+                            </div>
+                            <div class="skills-row animate" data-animate="fadeInDown">
+                                <div class="row">
+                                    <div class="col-md-8 offset-md-2">   
+                                        <div class="skill-item">
+                                            <h6>HTML CSS</h6>
+                                            <div class="skill-bar">
+                                                <span>70%</span>
+                                                <div class="filled-bar"></div>
+                                            </div>          
+                                        </div>
+                                        <div class="skill-item">
+                                            <h6>PSD Design</h6>
+                                            <div class="skill-bar">
+                                                <span>90%</span>
+                                                <div class="filled-bar-2"></div>
+                                            </div>          
+                                        </div>
+                                        <div class="skill-item">
+                                            <h6>Social Media</h6>
+                                            <div class="skill-bar">
+                                                <span>70%</span>
+                                                <div class="filled-bar"></div>
+                                            </div>          
+                                        </div>
+                                        <div class="skill-item last-skill">
+                                            <h6>Leadership</h6>
+                                            <div class="skill-bar">
+                                                <span>90%</span>
+                                                <div class="filled-bar-2"></div>
+                                            </div>          
+                                        </div>                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+
+            <div class="section animated-row" data-section="slide04">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                
+                                <h2>OUR TEAM</h2>
+                            </div>
+                            <div class="gallery-section">
+                                <div class="gallery-list owl-carousel owl-theme" id="imc">
+                                
+                                    
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/sj.jpg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Saurabh Jagtap</h4>
+                                                <p>Fourth Year, Computer Science and Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/aman.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Aman Agarwal</h4>
+                                                <p>Third Year, Computer Science and Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/anw.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Anway Ramteke</h4>
+                                                <p>Third Year,Electronics and telecommunication Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/sam.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Irtesam Virani</h4>
+                                                <p>Second Year,Electronics and telecommunication Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/hritik.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Hritik Akolkar</h4>
+                                                <p>Second Year,Electronics and telecommunication Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/priyanka.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Priyanka Chavan </h4>
+                                                <p>Second Year,Computer Science Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/Vishal.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Vishal Khedekar </h4>
+                                                <p>Second Year,Computer Science Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/vihang.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Vihang Badnore</h4>
+                                                <p>Second Year,Electronics and telecommunication Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/Sumit.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Sumit pande</h4>
+                                                <p>Second year,Information Technology</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item animate" data-animate="fadeInUp">
+                                        <div class="portfolio-item">
+                                            <div class="thumb">
+                                                <img src="images/Parag.jpeg" alt="">
+                                            </div>
+                                            <div class="thumb-inner animate" data-animate="fadeInUp">
+                                                <h4>Parag Patil</h4>
+                                                <p>Second Year,Computer Science Engineering</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="section animated-row" data-section="slide05"> 
+                <div class="section-inner" >
+                    <div class="about-section" > 
+                        <div class="row justify-content-center" >
+                            <div class="col-lg-8 " >
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="about-contentbox" >
+                                            <div class="animate" data-animate="fadeInUp">
+                                               
+                                               
+<h3>
+BE THE PART OF M'TRIX FAMILY</h3>
+
+<h5>CRITERIA TO JOIN M'TRIX -</h5>
+<ul>
+<li>
+    Anyone can join! (unless you can assure us that you would perform what we ask for. good or not, just do it! ✅)</li>
+<br>
+</ul>
+<h5>PLEDGE TO JOIN M'TRIX -</h5>
+<ul>
+
+<li>
+Should be punctual towards regular sessions and commited to complete given tasks on time</li>
+<br>
+<li>
+Should provide regular and true feedbacks after each session</li>
+<br>
+</ul>
+<p> For queries do write us on <a href="mailto:mtrix@sggs.ac.in?Subject=Hello%20M'trix" target="_blank" style="color:green ">mtrix@sggs.ac.in</a></p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+
+            <div class="section animated-row" data-section="slide05">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <span>TESTIMONIALS</span>
+                                <h2>what THEY SAY?</h2>
+                            </div>
+                            <div class="col-md-8 offset-md-2">
+                                <div class="testimonials-section">
+                                    <div class="testimonials-slider owl-carousel">
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="testimonial-item">
+                                                <div class="client-row">
+                                                    <img src="images/profile-01.jpg" class="rounded-circle" alt="profile 1">
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <h4>Sandar</h4>
+                                                    <p>"Ut varius leo eu mauris lacinia, eleifend posuere urna gravida. Aenean a mattis lacus."</p>
+                                                    <span>Managing Director</span>
+                                                </div>                                           
+                                            </div>
+                                        </div>
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="testimonial-item">
+                                                <div class="client-row">
+                                                    <img src="images/profile-01.jpg" class="rounded-circle" alt="profile 2">
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <h4>Shinn</h4>
+                                                    <p>"Nam iaculis, leo nec facilisis sollicitudin, dui massa tempus odio, vitae malesuada ante elit vitae eros."</p>
+                                                    <span>CEO and Founder</span>
+                                                </div>                                           
+                                            </div>
+                                        </div>
+                                        <div class="item animate" data-animate="fadeInUp">
+                                            <div class="testimonial-item">
+                                                <div class="client-row">
+                                                    <img src="images/profile-01.jpg" class="rounded-circle" alt="profile 3">
+                                                </div>
+                                                <div class="testimonial-content">
+                                                    <h4>Marlar</h4>
+                                                    <p>"Etiam efficitur, tortor facilisis finibus semper, diam magna fringilla lectus, et fringilla felis urna posuere tortor."</p>
+                                                    <span>Chief Marketing Officer</span>
+                                                </div>                                           
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+
+
+
+
+
+            <div class="section animated-row" data-section="#slide06">
+                <div class="section-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 wide-col-laptop">
+                            <div class="title-block animate" data-animate="fadeInUp">
+                                <h2>Frequently asked Questions</h2>
+                            </div>
+                            <div>
+                                    <h6 class="left-align">Why to join mtrix?</h6>
+                                    <p class="left-align italic">Our mission is to create a fun and supportive environment where we develop programming and coding skills together. We want to replace anxiety and code fear with inspiration and motivation to learn, and here we have group of best programmers from SGGS who will share thier experience for betterment of SGGS coding community.</p>                                        
+                                    <h6 class="left-align">How to join mtrix?</h6>
+                                    <p class="left-align italic">We have new recruitments each semester for First year students while all Others can articipate at the begining of every year. Conditions are given in Join Us tab. You can also reach us if you want to join after recruitments.</p>
+                                    <h6 class="left-align">Do i need coding experience to join mtrix?</h6>
+                                    <p class="left-align italic">No coding experience is required for FY students, others need to be aware of basic C syntax</p>
+                                    <h6 class="left-align">When are the interviews?</h6>
+                                    <p class="left-align italic">Dates for interviews will be conveyed via your SGGS mail ID`s.</p>
+                                    <h6 class="left-align">What do we do in mtrix?</h6>
+                                    <p class="left-align italic">We develop our coding skills, learn new geek stuff and use this knowledge to find solutions of real time problems(via developing softwares, apps and websites)</p>
+                                    <h6 class="left-align">What has mtrix achieved till now?</h6>
+                                    <p class="left-align italic">We had & have some of the amazing developers who had completed amazing projects which you can check in our projects section</p>
+                                    <h6 class="left-align">Which activities are taken in mtrix?</h6>
+                                    <p class="left-align italic">Please check out the <a style="color:green" href="#slide03" >sections</a> tab</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer> Developed by <a href="https://www.linkedin.com/in/hritik-akolkar-901932174/">Hritik Akolkar</a>,<a href="https://www.linkedin.com/in/priyanka-chavan-6168a8176">Priyanka Chavan</a> and <a href="https://www.linkedin.com/in/irtesam-virani-062bb7168/">Irtesam virani</a> under the guidance of <a href="https://in.linkedin.com/in/aman-agarwal-44b245147?trk=pub-pbmap">Aman Agarwal</a></footer>  
+                </div>
+            </div>
+        </div>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <!--<div id="social-icons">
+            <div class="text-right">
+                <ul class="social-icons">
+                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>
+                </ul>
+            </div>
+        </div>-->
+        <!-- <ul class="social-icons">
+  <li><a href="https://www.instagram.com/livingindiatv/">instagram<span></span></a></li>
+  <li><a href="https://in.pinterest.com/livingindiatv/">pinterest<span></span></a></li>
+  <li><a href="https://youtube.com">youtube<span></span></a></li>
+  <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+  <li><a href="https://twitter.com/livingindiatv">twitter<span></span></a></li>
+  <li><a href="https://www.facebook.com/livingindiatv/">facebook<span></span></a></li>
+ </ul> -->
+    </div>
+    
+
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/fullpage.min.js"></script>
+
+    <script src="js/scrolloverflow.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/jquery.inview.min.js"></script>
+
+    <script src="js/form.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script>
+       var w= $(window).width()
+    var owl = $('#imc');
+    var k=0;
+    if(w<400){
+        k=2;
+    }
+    else{
+        k=4;
+    }
+owl.owlCarousel({
+    items:k,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true
+});
+    </script>
+
+  </body>
+</html>
